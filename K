@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Super Cool Techy Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            padding: 40px 20px;
+            color: #ffffff;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        /* Section Styles */
+        section {
+            margin: 40px 0;
+        }
+
+        /* Feature Styles */
+        .feature {
+            border: 1px solid #444;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 8px;
+            background-color: #1e1e1e;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #282c35;
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        small {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Discover the Future with Our Super Cool Techy Solutions</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <section>
+        <div class="feature">
+            <h2>Feature 1: Name</h2>
+            <p>Description of the cutting-edge technology behind this Name feature.</p>
+        </div>
+
+        <div class="feature">
+            <h2>Feature 2: Name</h2>
+            <p>Explore the innovation that powers this amazing Name tech feature.</p>
+        </div>
+
+        <!-- Add more features as needed -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Super Cool Techy Website. All rights reserved. <small>Last updated: January 24, 2024</small></p>
+    </footer>
+</body>
+</html>
+
+
+------
+
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+header, footer {
+    padding: 20px;
+    color: #ffffff;
+    animation: fadeIn 1s ease-in-out; /* Header fade-in animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #1e1e1e, #2a2a2a);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.feature.clicked {
+    animation: clickEffect 0.5s ease-in-out;
+    background: linear-gradient(45deg, #2a2a2a, #353535);
+    transform: scale(1.02);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+@keyframes clickEffect {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        transform: scale(1.02);
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+    }
+}
+
+.feature:hover {
+    cursor: pointer;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.feature p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+.small-feature {
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    
+    section {
+        flex-direction: column;
+    }
+}
