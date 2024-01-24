@@ -181,3 +181,17 @@ section {
         flex-direction: column;
     }
 }
+
+
+
+------
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.feature').forEach(feature => {
+        feature.addEventListener('click', function () {
+            this.classList.toggle('clicked');
+        });
+    });
+});
+
